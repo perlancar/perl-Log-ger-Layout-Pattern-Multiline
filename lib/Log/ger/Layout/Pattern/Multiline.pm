@@ -52,7 +52,7 @@ sub get_hooks {
 
 This is just like L<Log::ger::Layout::Pattern> except that multiline log message
 is split per-line so that a message like C<"line1\nline2\nline3"> (with C<<
-"[%r] %m" >> format) is not laid out not as:
+"[%r] %m" >> format) is not laid out as:
 
  [0.003] line1
  line2
