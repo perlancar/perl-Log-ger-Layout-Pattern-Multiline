@@ -24,7 +24,6 @@ sub _layout {
 }
 
 sub get_hooks {
-
     my %conf = @_;
 
     $conf{format} or die "Please specify format";
@@ -70,4 +69,4 @@ but as:
 
 L<Log::ger::Layout::Pattern>
 
-Modelled after L<Log::Log4perl::Layout::Pattern::Multiline>.
+Modelled after L<Log::Log4perl::Layout::PatternLayout::Multiline>.
