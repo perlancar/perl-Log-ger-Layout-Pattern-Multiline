@@ -30,9 +30,15 @@ sub get_hooks {
 
     return {
         create_layouter => [
-            __PACKAGE__, 50,
-            sub {
-                [sub { _layout($conf{format}, @_) }];
+            __PACKAGE__, # key
+            50,          # priority
+            sub {        # hook
+                my %hook_args = @_;
+
+                my $layouter = sub {
+                    _layout($conf{format}, @_);
+                };
+                [$layouter];
             }],
     };
 }
