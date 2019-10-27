@@ -1,4 +1,4 @@
-0.002   2019-10-27  Released-By: PERLANCAR; Urgency: medium
+0.002   2019-10-27  Released-By: PERLANCAR; Urgency: high
 
 	- Adjust to Log::ger::Layout::Pattern 0.002 (arguments for
 	  _layout()) [RT#129269].
