@@ -12,12 +12,12 @@ use Log::ger::Layout::Pattern ();
 sub _layout {
     my $format = shift;
     my $msg = shift;
-    #my ($init_args, $lnum, $level) = @_;
+    #my ($init_args, $lvlnum, $lvlname) = @_;
 
     join(
         "\n",
         map {
-            Log::ger::Layout::Pattern::_layout($format, $_, @_)
+            Log::ger::Layout::Pattern::_layout($format, [], [], $_, @_)
           }
             split(/\R/, $msg)
         );
